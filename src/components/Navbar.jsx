@@ -21,11 +21,11 @@ const Navbar = () => {
             <div className='container'>
           
                 <div className='row flex'>
-                  <div className='logo-wrapper flex col-[<2>] items-center pt-2 pl-10'>
-                      <Link to={'/'}> <img className='w-60'  src={logo} alt='logo'/> </Link>  
+                  <div className='logo-wrapper flex col-[<2>] items-center  pl-10'>
+                      <Link to={'/'}> <img className='w-50'  src={logo} alt='logo'/> </Link>  
                   </div>
 
-                    <div className=' flex col-[<10>] items-center part 2 '>
+                    <div className=' flex col-[<10>] items-center part 2  border-1 border-solid border-gray-200 rounded-[8px] '>
 
                       <CountryDropdown/>
                      
