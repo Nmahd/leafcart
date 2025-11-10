@@ -1,7 +1,9 @@
 import React from 'react'
 import logo from '../assets/images/leafcart-logo-hr.png'
 import { Link } from 'react-router'
-import Button from '@mui/material/Button'
+import CountryDropdown from './Header/CountryDropdown.jsx'
+
+
 
 const Navbar = () => {
   return (
@@ -17,18 +19,20 @@ const Navbar = () => {
 
           <div className='header h-auto w-full pb-4 pt-4 ' >
             <div className='container'>
-              <div>
-                <div className='row'>
-                  <div className='logo-wrapper sm:w-1/4 flex-row col-[<2>] items-center '>
-                      <Link to={'/'}> <img className='w-full'  src={logo} alt='logo'/> </Link>  
+          
+                <div className='row flex'>
+                  <div className='logo-wrapper flex col-[<2>] items-center pt-2 pl-10'>
+                      <Link to={'/'}> <img className='w-60'  src={logo} alt='logo'/> </Link>  
                   </div>
 
-                    <div className=' flex col-[<10>] items-center '>
-                        <Button className='w-[150px] h-[80px]  min-w-[<150px>]'  >Your Location</Button>
+                    <div className=' flex col-[<10>] items-center part 2 '>
+
+                      <CountryDropdown/>
+                     
                     </div>
 
                 </div>
-              </div>
+            
 
             </div>
 
